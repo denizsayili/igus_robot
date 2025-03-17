@@ -8,7 +8,7 @@ const config = {
     host: 'localhost',      // client url to connect to
     id: 1,                  // robot id
     mock: false,            // if we want to mock robot
-    canIf: 'can1'           // what can interface we want to use
+    canIf: 'can0'           // what can interface we want to use
 }
 
 // Process the arguments
