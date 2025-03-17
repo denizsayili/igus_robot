@@ -1,0 +1,26 @@
+{
+  "name": "igus-motor-controller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG='igus:.*' node index.js -p 3000 --host 192.168.0.107",
+    "start-grafana": "docker run -d --name=grafana -p 3001:3000 -e GF_INSTALL_PLUGINS=golioth-websocket-datasource grafana/grafana"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nanotimer": "^0.3.15",
+    "socket.io-client": "^4.5.1",
+    "socketcan": "^3.0.0",
+    "firmata": "^2.3.0",
+    "firmata-io": "npm:@joepuzzo/firmata-io@^2.3.0",
+    "johnny-five": "^2.1.0"
+  },
+  "devDependencies": {
+    "mock-firmata": "^0.2.0"
+  }
+}
